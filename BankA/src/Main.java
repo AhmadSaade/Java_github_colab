@@ -8,6 +8,12 @@ public class Main {
 
         System.out.println("Current balance: " + myAccount.getBalance());
         System.out.println("Account owner: " + myAccount.getOwner());
+        
+        // Account history
+        System.out.println("Account history: ");
+        for (BankAccount.Transaction t : myAccount.getHistory()) {
+            System.out.println(t.getType() + " of " + t.getAmount());
+        }
 
 
     }
